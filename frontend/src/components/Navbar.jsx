@@ -5,7 +5,7 @@ import { HiOutlineUser } from "react-icons/hi";
 
 import avatarImg from "../assets/avatar.png"
 import { useState } from "react";
-// import { useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 // import { useAuth } from "../context/AuthContext";
 
 const navigation = [
@@ -18,8 +18,8 @@ const navigation = [
 const Navbar = () => {
 
     const  [isDropdownOpen, setIsDropdownOpen] = useState(false)
-    // const cartItems = useSelector(state => state.cart.cartItems);
-    const cartItems=2;
+    const cartItems = useSelector(state => state.cart.cartItems);
+    // const cartItems=2;
    
     // const {currentUser, logout} = useAuth()
     const currentUser = false;
