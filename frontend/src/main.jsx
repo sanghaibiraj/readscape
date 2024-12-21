@@ -11,6 +11,7 @@ import { store } from './redux/store.js';
 import 'sweetalert2/dist/sweetalert2.js'
 import CartPage from './pages/books/CartPage.jsx';
 import CheckoutPage from './pages/books/CheckoutPage.jsx';
+import SingleBook from './pages/books/SingleBook.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -26,6 +27,8 @@ createRoot(document.getElementById('root')).render(
           <Route path='register' element={<Register />} />
           <Route path='cart' element={<CartPage />} />
           <Route path='checkout' element={<CheckoutPage />} />
+          <Route path='/books/:id' element={<SingleBook />} />
+
 
         </Route>
       </Routes>
